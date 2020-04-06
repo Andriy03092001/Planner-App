@@ -1,6 +1,13 @@
 <div class="row">
+
+    <app-add-event></app-add-event>
+
     <div class="col-md-5">
-        <app-event-list></app-event-list>
+        <app-event-list (eventSelected)="temp = $event"></app-event-list>
     </div>
-    <app-event-detail></app-event-detail>
+    <!-- В цей компонент нада отправить дані -->
+    <app-event-detail *ngIf="temp; else infoText" [eventDetail]="temp"></app-event-detail>
+    <ng-template #infoText>
+        <p>Please, select event</p>
+    </ng-template>
 </div>

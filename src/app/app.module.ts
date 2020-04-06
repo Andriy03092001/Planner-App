@@ -10,7 +10,8 @@ import { EventListComponent } from './events/event-list/event-list.component';
 import { EventDetailComponent } from './events/event-detail/event-detail.component';
 import { EventItemComponent } from './events/event-list/event-item/event-item.component';
 import { RequirementEditComponent } from './requirements/requirement-edit/requirement-edit.component';
-
+import { AddEventComponent } from './events/add-event/add-event.component';
+import { FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +21,13 @@ import { RequirementEditComponent } from './requirements/requirement-edit/requir
     EventListComponent,
     EventDetailComponent,
     EventItemComponent,
-    RequirementEditComponent
+    RequirementEditComponent,
+    AddEventComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
