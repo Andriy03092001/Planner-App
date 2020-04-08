@@ -10,13 +10,9 @@ import { EventService } from '../../event.service';
 export class EventItemComponent implements OnInit {
 
   @Input() myEvent: Event;
+  @Input() index: number;
   constructor(private eventService: EventService) { }
 
   ngOnInit(): void {
   }
-
-  onSelected() {
-    this.eventService.eventSelected.emit(this.myEvent);
-  }
-
 }

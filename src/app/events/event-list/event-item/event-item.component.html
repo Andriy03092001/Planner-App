@@ -1,4 +1,4 @@
-<a href="#" class="list-group" (click)="onSelected()">
+<a [routerLink]="[index]" routerLinkActive="ative-item" class="list-group">
     <h4 class="list-group-heading">{{myEvent.name}}</h4>
     <!-- <p class="list-group-item-text">{{myEvent.description}}</p> -->
     <img class="img-fluid" [src]="myEvent.image" alt="">

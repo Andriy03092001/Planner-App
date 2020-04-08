@@ -1,10 +1,13 @@
-<app-header (Selected)="temp = $event"></app-header>
+<app-header></app-header>
 
 <div class="container">
     <div class="row">
         <div class="col">
-            <app-events *ngIf="temp === 'events'"></app-events>
-            <app-requirements *ngIf="temp != 'events'"></app-requirements>
+
+            <router-outlet></router-outlet>
+
+            <!-- <app-events *ngIf="temp === 'events'"></app-events>
+            <app-requirements *ngIf="temp != 'events'"></app-requirements> -->
         </div>
     </div>
 </div>

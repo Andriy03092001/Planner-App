@@ -12,6 +12,8 @@ import { EventItemComponent } from './events/event-list/event-item/event-item.co
 import { RequirementEditComponent } from './requirements/requirement-edit/requirement-edit.component';
 import { AddEventComponent } from './events/add-event/add-event.component';
 import { FormsModule } from "@angular/forms";
+import { EventSrartComponent } from './events/event-srart/event-srart.component';
+import { Page404Component } from './page404/page404.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { FormsModule } from "@angular/forms";
     EventDetailComponent,
     EventItemComponent,
     RequirementEditComponent,
-    AddEventComponent
+    AddEventComponent,
+    EventSrartComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,

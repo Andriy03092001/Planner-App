@@ -11,10 +11,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  @Output() Selected = new EventEmitter<string>();
-  onSelect(data: string) {
-    this.Selected.emit(data);
-  }
-
 }
